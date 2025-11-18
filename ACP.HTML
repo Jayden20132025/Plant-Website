@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .border {
+        border: 2px solid red;
+      }
+
+      .trans {
+        opacity: 0.7;
+      }
+
+      .pimg1,
+      .pimg2,
+      .pimg3 {
+        position: relative;
+        opacity: 0.7;
+        background-repeat: no-repeat;
+      }
+
+      .section {
+        text-align: center;
+        padding: 50px 80px;
+      }
+
+      .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+      }
+
+      .section-dark {
+        background-color: #282e34;
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#About-Me">About-Me</a>
+      <a href="#Gallery">Gallery</a>
+      <a href="#Contact-Us">Contact-Us</a>
+    </div>
+
+    <section class="border trans" style="font-size: 40px">
+      <center>Welcome all to this website</center>
+      <br />
+    </section>
+
+    <h2><center>Chinese cuisine</center></h2>
+    <p>
+      Chinese cuisine is an important part of Chinese culture, which includes
+      cuisine originating from the diverse regions of China, as well as from
+      Chinese people in other parts of the world. Because of the Chinese
+      diaspora and historical power of the country, Chinese cuisine has
+      influenced many other cuisines in Asia, with modifications made to cater
+      to local palates. Chinese food staples such as rice, soy sauce, noodles,
+      tea, and tofu, and utensils such as chopsticks and the wok, can now be
+      found worldwide.
+    </p>
+
+    <section>
+      <img
+        class="mySlides"
+        src="chopsticks.jpg"
+        style="height: 500px; width: 1340px"
+      />
+      <img
+        class="mySlides"
+        src="chines tofu.jpg"
+        style="height: 500px; width: 1340px"
+      />
+      <img
+        class="mySlides"
+        src="chinese noodles.jpg"
+        style="height: 500px; width: 1340px"
+      />
+    </section>
+
+    <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+      }
+    </script>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">
+          These are some tradditinal foods and utensils for India
+        </span>
+      </div>
+    </div>
+
+    <p>Pizza</p>
+    <p>
+      <img
+        src="https://i.ibb.co/207jW622/pizza.jpg"
+        style="width: 170px; height: 170px; margin-left: 15px; float: right"
+      />
+      Pizza (Italian: ['pittsa], Neapolitan: ['pittsə]) is a savory dish of
+      Italian origin consisting of a usually round, flattened base of leavened
+      wheat-based dough topped with tomatoes, cheese, and often various other
+      ingredients (such as anchovies, mushrooms, onions, olives, pineapple,
+      meat, etc.), which is then baked at a high temperature, traditionally in a
+      wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A person
+      who makes pizza is known as a pizzaiolo.
+    </p>
+    <hr />
+    <p>Pizza</p>
+    <p>
+      <img
+        src="https://i.ibb.co/207jW622/pizza.jpg"
+        style="width: 170px; height: 170px; float: left; margin-left: 15px"
+      />
+      Pizza (Italian: ['pittsa], Neapolitan: ['pittsə]) is a savory dish of
+      Italian origin consisting of a usually round, flattened base of leavened
+      wheat-based dough topped with tomatoes, cheese, and often various other
+      ingredients (such as anchovies, mushrooms, onions, olives, pineapple,
+      meat, etc.), which is then baked at a high temperature, traditionally in a
+      wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A
+    </p>
+  </body>
+</html>
