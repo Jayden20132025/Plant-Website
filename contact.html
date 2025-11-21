@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/jZk8WF1F/plant.png"
+      type="img"
+    />
+  </head>
+  <body>
+    <img class="logoimg" src="https://i.ibb.co/jZk8WF1F/plant.png" />
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </div>
+    <br />
+    <form>
+      <fieldset>
+        <legend class="titleform"></legend>
+        <label class="text">Enter your name:</label>
+        <input type="text" name="Name" />
+        <h4 class="text">Our GMAIL account - "Jaydenmutashubilwa@gmail.com</h4>
+        <label class="text">GMAIL Account Id:</label>
+        <input type="email" name="email" />
+        <br />
+        <label class="text">Complaints (optional)</label>
+        <br />
+        <textarea class="text"></textarea>
+        <label class="text">Rate the Website</label>
+        <input type="radio" name="Gender" value="male" id="gender" />1
+        <input type="radio" name="Gender" value="male" id="gender" />2
+        <input type="radio" name="Gender" value="male" id="gender" />3
+        <input type="radio" name="Gender" value="male" id="gender" />4
+        <input type="radio" name="Gender" value="male" id="gender" />5
+        <br />
+        <center>
+          <a onclick="submit()" class="submit" href="thanks.html">submit</a>
+        </center>
+      </fieldset>
+    </form>
+    <section class="footer">
+      &copy; All rights reserved by Jayden Mutashubilwa
+    </section>
+    <script>
+      function submit() {
+        alert("Submit for sure?");
+      }
+    </script>
+  </body>
+</html>
